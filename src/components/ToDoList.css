@@ -1,0 +1,7 @@
+.toDoList{
+    border: 1px solid black;
+}
+
+.toDoList__Item{
+    border: 1px solid yellow;
+}

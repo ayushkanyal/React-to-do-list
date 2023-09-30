@@ -1,0 +1,40 @@
+.submit--form {
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+  justify-content: left;
+  width: 27%;
+  margin: 60px auto;
+  box-shadow: 0 0 8px black;
+  padding: 30px;
+  border-radius: 2%;
+}
+
+.submit__label{
+    font-size: 18px;
+    font-weight: 750;
+}
+
+.submit__input{
+    width: 97%;
+    padding: 2px;
+}
+
+input:focus{
+    background-color: rgb(236, 142, 200);
+    border-color: rgb(188, 123, 164);
+}
+
+.submit__button{
+    background-color: rgb(128, 0, 81);
+    padding: 8px;
+    width: 25%;
+    border: none;
+    color: white;
+}
+
+.submit__button:hover{
+    background-color:rgb(170, 2, 108);
+    cursor: pointer;
+    box-shadow: 0 0 4px pink;
+}
