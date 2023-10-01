@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import InputForm from './components/InputForm';
 import ToDoList from './components/ToDoList';
@@ -12,10 +13,16 @@ function App() {
     { id: "1", text: "Watch less TV" }
   ];
 
+  const [submittedItems, setSubmittedItems] = useState(DUMMY_DATA);
+
+  function addItems(input){
+    setSubmittedItems(prevValue => [...prevValue, {text: input}])
+  }
+
   return (
     <div className="App">
-      <InputForm />
-      <ToDoList itemsList={DUMMY_DATA} />
+      <InputForm onAdd={addItems}  />
+      <ToDoList itemsList={submittedItems} />
     </div>
   );
 }
