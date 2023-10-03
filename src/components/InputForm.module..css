@@ -25,16 +25,13 @@ input:focus{
     border-color: rgb(188, 123, 164);
 }
 
-.submit__button{
-    background-color: rgb(128, 0, 81);
-    padding: 8px;
-    width: 25%;
-    border: none;
-    color: white;
+/* On invalid input */
+
+.invalid > input{
+    background-color: coral;
+    border-color: red;
 }
 
-.submit__button:hover{
-    background-color:rgb(170, 2, 108);
-    cursor: pointer;
-    box-shadow: 0 0 4px pink;
+.invalid > label{
+    color: red;
 }
