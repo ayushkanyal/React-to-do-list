@@ -4,7 +4,6 @@ import InputForm from './components/InputForm';
 import ToDoList from './components/ToDoList';
 
 function App() {
-
   const DUMMY_DATA = [
     {
       id: "0",
